@@ -16,7 +16,7 @@ interface Expense {
     receiptAttached: boolean;
 }
 
-const ExpensesList: React.FC = () => {
+const ExpensesList = () => {
     const [expenses, setExpenses] = useState<Expense[]>([]);
     const [hasMore, setHasMore] = useState(true);
     const dispatch = useDispatch()
