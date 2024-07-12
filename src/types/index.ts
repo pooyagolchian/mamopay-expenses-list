@@ -9,3 +9,9 @@ export interface Expense {
     status: string;
     receiptAttached: boolean;
 }
+
+export interface ExpensesState {
+    expenses: Expense[];
+    page: number;
+    hasMore: boolean;
+}
